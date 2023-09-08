@@ -12,3 +12,4 @@ stack-docs.ipr
 stack-docs.iws
 /html_docs
 .vscode
+.idea
