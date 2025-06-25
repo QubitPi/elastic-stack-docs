@@ -53,3 +53,4 @@ jobs:
           enable_jekyll: false
           user_name: ${{ env.USER }}
           user_email: ${{ env.EMAIL }}
+          cname: elastic.qubitpi.org
