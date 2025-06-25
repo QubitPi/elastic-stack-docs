@@ -57,10 +57,10 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="/QubitPi/elastic-docs/guide/static/styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://qubitpi.github.io/QubitPi/elastic-docs/guide/static/styles-v1.css" />
   </head>
 
-  <!--© 2015-2022 Elasticsearch B.V. -->
+  <!--© 2015-2025 Elasticsearch B.V. -->
   <!-- All Elastic documentation is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. -->
   <!-- http://creativecommons.org/licenses/by-nc-nd/4.0/ -->
 
@@ -101,11 +101,6 @@
                 <div class="col-12 order-1 col-md-8 order-md-2 col-lg-7 order-lg-2 guide-section" id="middle_col">
                   <!-- start body -->
                   
-<div id="content">
-<div class="breadcrumbs">
-<span class="breadcrumb-link"><a href="/guide/">Elastic Docs</a></span>
-<span class="chevron-right">›</span><span class="breadcrumb-link"><a href="index.html">Elastic Installation and Upgrade Guide</a></span>
-</div>
 <div class="navheader">
 <span class="prev">
 <a href="overview.html">« Overview</a>
@@ -114,16 +109,29 @@
 <a href="air-gapped-install.html">Installing in an air-gapped environment »</a>
 </span>
 </div>
+<div class="book" lang="en">
+<div class="titlepage">
+<div class="breadcrumbs">
+<span class="breadcrumb-link"><a href="/guide/">Elastic Docs</a></span>
+<span class="chevron-right">›</span><span class="breadcrumb-link"><a href="index.html">Elastic Installation and Upgrade Guide</a></span>
+</div>
+<div>
+<div><h1 class="title"><a id="id-1"></a>Installing the Elastic Stack</h1><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack.asciidoc">edit</a></div>
+</div>
+<!--EXTRA-->
+</div>
+<div id="content">
 <div class="chapter">
 <div class="titlepage"><div><div>
-<h1 class="title"><a id="installing-elastic-stack"></a>Installing the Elastic Stack<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack.asciidoc">edit</a></h1>
+<div class="position-relative"><h2 class="title"><a id="installing-elastic-stack"></a>Installing the Elastic Stack</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack.asciidoc">edit</a></div>
 </div></div></div>
 <p>When installing the Elastic Stack, you must use the same version
 across the entire stack. For example, if you are using Elasticsearch
-8.10.0, you install Beats 8.10.0, APM Server 8.10.0, Elasticsearch Hadoop 8.10.0,
-Kibana 8.10.0, and Logstash 8.10.0.</p>
-<p>If you&#8217;re upgrading an existing installation, see <a class="xref" href="upgrading-elastic-stack.html" title="Upgrade to Elastic 8.10.0">Upgrading the Elastic Stack</a> for information about how to ensure compatibility with 8.10.0.</p>
-<h3><a id="network-requirements"></a>Network requirements<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack.asciidoc">edit</a></h3>
+9.0.0-beta1, you install Beats 9.0.0-beta1, APM Server 9.0.0-beta1, Elasticsearch Hadoop 9.0.0-beta1,
+Kibana 9.0.0-beta1, and Logstash 9.0.0-beta1.</p>
+<p>If you&#8217;re upgrading an existing installation, see <a class="xref" href="upgrading-elastic-stack.html" title="Upgrade to Elastic 9.0.0-beta1">Upgrading the Elastic Stack</a> for information about how to ensure compatibility with 9.0.0-beta1.</p>
+<p>For an example of installing and configuring the Elastic Stack, you can try out our <a class="xref" href="installing-elastic-stack.html#installing-stack-demo-self" title="Tutorial 1: Installing a self-managed Elastic Stack">Tutorial 1: Installing a self-managed Elastic Stack</a>. After that, you can also learn how to secure your installation for production following the steps in <a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure" title="Tutorial 2: Securing a self-managed Elastic Stack">Tutorial 2: Securing a self-managed Elastic Stack</a>.</p>
+<div class="position-relative"><h3><a id="network-requirements"></a>Network requirements</h3><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack.asciidoc">edit</a></div>
 <p>To install the Elastic Stack on-premises, the following ports need to be open
 for each component.</p>
 <div class="informaltable">
@@ -178,7 +186,7 @@ APM Server</p></td>
 and dependencies before installation. Refer to
 <a href="https://docs.elastic.co/en/integrations" class="ulink" target="_top">Integrations</a>.</p>
 <p>For more information on supported network configurations, refer to <a href="https://www.elastic.co/guide/en/ingest/master" class="ulink" target="_top">Elasticsearch Ingest Architectures</a>.</p>
-<h3><a id="install-order-elastic-stack"></a>Installation order<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack.asciidoc">edit</a></h3>
+<div class="position-relative"><h3><a id="install-order-elastic-stack"></a>Installation order</h3><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack.asciidoc">edit</a></div>
 <p>Install the Elastic Stack products you want to use in the following order:</p>
 <div class="olist orderedlist">
 <ol class="orderedlist">
@@ -192,7 +200,7 @@ Kibana (<a href="https://www.elastic.co/guide/en/kibana/master/install.html" cla
 Logstash (<a href="https://www.elastic.co/guide/en/logstash/master/installing-logstash.html" class="ulink" target="_top">install</a>)
 </li>
 <li class="listitem">
-Beats (<a href="https://www.elastic.co/guide/en/beats/libbeat/master/getting-started.html" class="ulink" target="_top">install instructions</a>)
+Elastic Agent (<a href="https://www.elastic.co/guide/en/fleet/master/elastic-agent-installation.html" class="ulink" target="_top">install instructions</a>) or Beats (<a href="https://www.elastic.co/guide/en/beats/libbeat/master/getting-started.html" class="ulink" target="_top">install instructions</a>)
 </li>
 <li class="listitem">
 APM (<a href="https://www.elastic.co/guide/en/apm/guide/master/apm-quick-start.html" class="ulink" target="_top">install instructions</a>)
@@ -204,7 +212,7 @@ Elasticsearch Hadoop (<a href="https://www.elastic.co/guide/en/elasticsearch/had
 </div>
 <p>Installing in this order ensures that the components each product depends
 on are in place.</p>
-<h3><a id="install-elastic-stack-for-elastic-cloud"></a>Installing on Elastic Cloud<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack.asciidoc">edit</a></h3>
+<div class="position-relative"><h3><a id="install-elastic-stack-for-elastic-cloud"></a>Installing on Elastic Cloud</h3><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack.asciidoc">edit</a></div>
 <p>Our hosted Elasticsearch Service is available on AWS, GCP, and Azure, and you can <a href="https://www.elastic.co/cloud/elasticsearch-service/signup?page=docs&amp;placement=docs-body" class="ulink" target="_top">try it for free</a>.</p>
 <p>Installing on Elastic Cloud is easy: a single click creates an Elasticsearch cluster
 configured to the size you want, with or without high availability. The
@@ -213,15 +221,2052 @@ ability to secure and monitor your cluster. Kibana is enabled automatically,
 and a number of popular plugins are readily available.</p>
 <p>Some Elastic Cloud features can be used only with a specific subscription. For more
 information, see <a href="https://www.elastic.co/pricing/" class="ulink" target="_top">https://www.elastic.co/pricing/</a>.</p>
+<div class="section">
+<div class="titlepage"><div><div>
+<div class="position-relative"><h2 class="title"><a id="installing-stack-demo-self"></a>Tutorial 1: Installing a self-managed Elastic Stack</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-self.asciidoc">edit</a></div>
+</div></div></div>
+<p>This tutorial demonstrates how to install and configure the Elastic Stack in a self-managed environment. Following these steps, you&#8217;ll set up a three node Elasticsearch cluster, with Kibana, Fleet Server, and Elastic Agent, each on separate hosts. The Elastic Agent will be configured with the System integration, enabling it to gather local system logs and metrics and deliver them into the Elasticsearch cluster. Finally, you&#8217;ll learn how to view the system data in Kibana.</p>
+<p>It should take between one and two hours to complete these steps.</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-self-prereqs" title="Prerequisites and assumptions">Prerequisites and assumptions</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-self-overview" title="Elastic Stack overview">Elastic Stack overview</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-self-elasticsearch-first" title="Step 1: Set up the first Elasticsearch node">Step 1: Set up the first Elasticsearch node</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-self-elasticsearch-config" title="Step 2: Configure the first Elasticsearch node for connectivity">Step 2: Configure the first Elasticsearch node for connectivity</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-self-elasticsearch-start" title="Step 3: Start Elasticsearch">Step 3: Start Elasticsearch</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-self-elasticsearch-second" title="Step 4: Set up a second Elasticsearch node">Step 4: Set up a second Elasticsearch node</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-self-elasticsearch-third" title="Step 5: Set up additional Elasticsearch nodes">Step 5: Set up additional Elasticsearch nodes</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-self-kibana" title="Step 6: Install Kibana">Step 6: Install Kibana</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-self-fleet-server" title="Step 7: Install Fleet Server">Step 7: Install Fleet Server</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-self-elastic-agent" title="Step 8: Install Elastic Agent">Step 8: Install Elastic Agent</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-self-view-data" title="Step 9: View your system data">Step 9: View your system data</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-self-next-steps" title="Next steps">Next steps</a>
+</li>
+</ul>
 </div>
-<div class="navfooter">
+<div class="important admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>If you&#8217;re using these steps to configure a production cluster that uses trusted CA-signed certificates for secure communications, after completing Step 6 to install Kibana we recommend jumping directly to <a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure" title="Tutorial 2: Securing a self-managed Elastic Stack">Tutorial 2: Securing a self-managed Elastic Stack</a>.</p>
+<p>The second tutorial includes steps to configure security across the Elastic Stack, and then to set up Fleet Server and Elastic Agent with SSL certificates enabled.</p>
+</div>
+</div>
+<div class="position-relative"><h2><a id="install-stack-self-prereqs"></a>Prerequisites and assumptions</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-self.asciidoc">edit</a></div>
+<p>To get started, you&#8217;ll need the following:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+A set of virtual or physical hosts on which to install each stack component.
+</li>
+<li class="listitem">
+On each host, a super user account with <code class="literal">sudo</code> privileges.
+</li>
+</ul>
+</div>
+<p>The examples in this guide use RPM packages to install the Elastic Stack components on hosts running Red Hat Enterprise Linux 8. The steps for other install methods and operating systems are similar, and can be found in the documentation linked from each section. The packages that you&#8217;ll install are:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<a href="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-9.0.0-beta1-x86_64.rpm" class="ulink" target="_top">https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-9.0.0-beta1-x86_64.rpm</a>
+</li>
+<li class="listitem">
+<a href="https://artifacts.elastic.co/downloads/kibana/kibana-9.0.0-beta1-x86_64.rpm" class="ulink" target="_top">https://artifacts.elastic.co/downloads/kibana/kibana-9.0.0-beta1-x86_64.rpm</a>
+</li>
+<li class="listitem">
+<a href="https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-9.0.0-beta1-linux-x86_64.tar.gz" class="ulink" target="_top">https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-9.0.0-beta1-linux-x86_64.tar.gz</a>
+</li>
+</ul>
+</div>
+<div class="note admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>For Elastic Agent and Fleet Server (both of which use the elastic-agent-9.0.0-beta1-linux-x86_64.tar.gz package) we recommend using TAR/ZIP packages over RPM/DEB system packages, since only the former support upgrading using Fleet.</p>
+</div>
+</div>
+<p>Special considerations such as firewalls and proxy servers are not covered here.</p>
+<p>For the basic ports and protocols required for the installation to work, refer to the following overview section.</p>
+<div class="position-relative"><h2><a id="install-stack-self-overview"></a>Elastic Stack overview</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-self.asciidoc">edit</a></div>
+<p>Before starting, take a moment to familiarize yourself with the Elastic Stack components.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/stack-install-final-state.png" alt="Image showing the relationships between stack components">
+</div>
+</div>
+<p>To learn more about the Elastic Stack and how each of these components are related, refer to <a href="https://www.elastic.co/guide/en/starting-with-the-elasticsearch-platform-and-its-solutions/current/stack-components.html" class="ulink" target="_top">An overview of the Elastic Stack</a>.</p>
+<div class="position-relative"><h2><a id="install-stack-self-elasticsearch-first"></a>Step 1: Set up the first Elasticsearch node</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-self.asciidoc">edit</a></div>
+<p>To begin, use RPM to install Elasticsearch on the first host. This initial Elasticsearch instance will serve as the master node.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Log in to the host where you&#8217;d like to set up your first Elasticsearch node.
+</li>
+<li class="listitem">
+<p>Create a working directory for the installation package:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">mkdir elastic-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Change into the new directory:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">cd elastic-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Download the Elasticsearch RPM and checksum file from the Elastic Artifact Registry. You can find details about these steps in the section <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/rpm.html#install-rpm" class="ulink" target="_top">Download and install the RPM manually</a>.</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-9.0.0-beta1-x86_64.rpm
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-9.0.0-beta1-x86_64.rpm.sha512</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Confirm the validity of the downloaded package by checking the SHA of the downloaded RPM against the published checksum:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">shasum -a 512 -c elasticsearch-9.0.0-beta1-x86_64.rpm.sha512</pre>
+</div>
+<p>The command should return: <code class="literal">elasticsearch-{version}-x86_64.rpm: OK</code>.</p>
+</li>
+<li class="listitem">
+<p>Run the Elasticsearch install command:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo rpm --install elasticsearch-9.0.0-beta1-x86_64.rpm</pre>
+</div>
+<p>The Elasticsearch install process enables certain security features by default, including the following:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Authentication and authorization are enabled, including a built-in <code class="literal">elastic</code> superuser account.
+</li>
+<li class="listitem">
+Certificates and keys for TLS are generated for the transport and HTTP layer, and TLS is enabled and configured with these keys and certificates.
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+Copy the terminal output from the install command to a local file. In particular, you&#8217;ll need the password for the built-in <code class="literal">elastic</code> superuser account. The output also contains the commands to enable Elasticsearch to run as a service, which you&#8217;ll use in the next step.
+</li>
+<li class="listitem">
+<p>Run the following two commands to enable Elasticsearch to run as a service using <code class="literal">systemd</code>. This enables Elasticsearch to start automatically when the host system reboots. You can find details about this and the following steps in <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/starting-elasticsearch.html#start-es-deb-systemd" class="ulink" target="_top">Running Elasticsearch with <code class="literal">systemd</code></a>.</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo systemctl daemon-reload
+sudo systemctl enable elasticsearch.service</pre>
+</div>
+</li>
+</ol>
+</div>
+<div class="position-relative"><h2><a id="install-stack-self-elasticsearch-config"></a>Step 2: Configure the first Elasticsearch node for connectivity</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-self.asciidoc">edit</a></div>
+<p>Before moving ahead to configure additional Elasticsearch nodes, you&#8217;ll need to update the Elasticsearch configuration on this first node so that other hosts are able to connect to it. This is done by updating the settings in the <code class="literal">elasticsearch.yml</code> file. For details about all available settings refer to <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/settings.html" class="ulink" target="_top">Configuring Elasticsearch</a>.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+In a terminal, run the <code class="literal">ifconfig</code> command and copy the value for the host inet IP address (for example, <code class="literal">10.128.0.84</code>). You&#8217;ll need this value later.
+</li>
+<li class="listitem">
+<p>Open the Elasticsearch configuration file in a text editor, such as <code class="literal">vim</code>:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo vim /etc/elasticsearch/elasticsearch.yml</pre>
+</div>
+</li>
+<li class="listitem">
+<p>In a multi-node Elasticsearch cluster, all of the Elasticsearch instances need to have the same name.</p>
+<p>In the configuration file, uncomment the line <code class="literal">#cluster.name: my-application</code> and give the Elasticsearch instance any name that you&#8217;d like:</p>
+<div class="pre_wrapper lang-yaml">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-yaml">cluster.name: elasticsearch-demo</pre>
+</div>
+</li>
+<li class="listitem">
+<p>By default, Elasticsearch runs on <code class="literal">localhost</code>. In order for Elasticsearch instances on other nodes to be able to join the cluster, you&#8217;ll need to set up Elasticsearch to run on a routable, external IP address.</p>
+<p>Uncomment the line <code class="literal">#network.host: 192.168.0.1</code> and replace the default address with the value that you copied from the <code class="literal">ifconfig</code> command output. For example:</p>
+<div class="pre_wrapper lang-yaml">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-yaml">network.host: 10.128.0.84</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Elasticsearch needs to be enabled to listen for connections from other, external hosts.</p>
+<p>Uncomment the line <code class="literal">#transport.host: 0.0.0.0</code>. The <code class="literal">0.0.0.0</code> setting enables Elasticsearch to listen for connections on all available network interfaces. Note that in a production environment you might want to restrict this by setting this value to match the value set for <code class="literal">network.host</code>.</p>
+<div class="pre_wrapper lang-yaml">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-yaml">transport.host: 0.0.0.0</pre>
+</div>
+<div class="tip admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>You can find details about the <code class="literal">network.host</code> and <code class="literal">transport.host</code> settings in the Elasticsearch <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/modules-network.html" class="ulink" target="_top">Networking</a> documentation.</p>
+</div>
+</div>
+</li>
+<li class="listitem">
+Save your changes and close the editor.
+</li>
+</ol>
+</div>
+<div class="position-relative"><h2><a id="install-stack-self-elasticsearch-start"></a>Step 3: Start Elasticsearch</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-self.asciidoc">edit</a></div>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>Now, it&#8217;s time to start the Elasticsearch service:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo systemctl start elasticsearch.service</pre>
+</div>
+<p>If you need to, you can stop the service by running <code class="literal">sudo systemctl stop elasticsearch.service</code>.</p>
+</li>
+<li class="listitem">
+<p>Make sure that Elasticsearch is running properly.</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo curl --cacert /etc/elasticsearch/certs/http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200</pre>
+</div>
+<p>In the command, replace <code class="literal">$ELASTIC_PASSWORD</code> with the <code class="literal">elastic</code> superuser password that you copied from the install command output.</p>
+<p>If all is well, the command returns a response like this:</p>
+<div class="pre_wrapper lang-js">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-js">{
+  "name" : "Cp9oae6",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "AT69_C_DTp-1qgIJlatQqA",
+  "version" : {
+    "number" : "{version_qualified}",
+    "build_type" : "{build_type}",
+    "build_hash" : "f27399d",
+    "build_flavor" : "default",
+    "build_date" : "2016-03-30T09:51:41.449Z",
+    "build_snapshot" : false,
+    "lucene_version" : "{lucene_version}",
+    "minimum_wire_compatibility_version" : "1.2.3",
+    "minimum_index_compatibility_version" : "1.2.3"
+  },
+  "tagline" : "You Know, for Search"
+}</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Finally, check the status of Elasticsearch:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo systemctl status elasticsearch</pre>
+</div>
+<p>As with the previous <code class="literal">curl</code> command, the output should confirm that Elasticsearch started successfully. Type <code class="literal">q</code> to exit from the <code class="literal">status</code> command results.</p>
+</li>
+</ol>
+</div>
+<div class="position-relative"><h2><a id="install-stack-self-elasticsearch-second"></a>Step 4: Set up a second Elasticsearch node</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-self.asciidoc">edit</a></div>
+<p>To set up a second Elasticsearch node, the initial steps are similar to those that you followed for <a class="xref" href="installing-elastic-stack.html#install-stack-self-elasticsearch-first" title="Step 1: Set up the first Elasticsearch node">Step 1: Set up the first Elasticsearch node</a>.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Log in to the host where you&#8217;d like to set up your second Elasticsearch instance.
+</li>
+<li class="listitem">
+<p>Create a working directory for the installation package:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">mkdir elastic-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Change into the new directory:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">cd elastic-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Download the Elasticsearch RPM and checksum file:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-9.0.0-beta1-x86_64.rpm
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-9.0.0-beta1-x86_64.rpm.sha512</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Check the SHA of the downloaded RPM:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">shasum -a 512 -c elasticsearch-9.0.0-beta1-x86_64.rpm.sha512</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Run the Elasticsearch install command:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo rpm --install elasticsearch-9.0.0-beta1-x86_64.rpm</pre>
+</div>
+<p>Unlike the setup for the first Elasticsearch node, in this case you don&#8217;t need to copy the output of the install command, since these settings will be updated in a later step.</p>
+</li>
+<li class="listitem">
+<p>Enable Elasticsearch to run as a service:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo systemctl daemon-reload
+sudo systemctl enable elasticsearch.service</pre>
+</div>
+<div class="important admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>Don&#8217;t start the Elasticsearch service yet! There are a few more configuration steps to do before restarting.</p>
+</div>
+</div>
+</li>
+<li class="listitem">
+<p>To enable this second Elasticsearch node to connect to the first, you need to configure an enrollment token.</p>
+<div class="important admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>Be sure to run all of these configuration steps before starting the Elasticsearch service.</p>
+<p>You can find additional details about these steps in <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/rpm.html#_reconfigure_a_node_to_join_an_existing_cluster_2" class="ulink" target="_top">Reconfigure a node to join an existing cluster</a> and also in <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/add-elasticsearch-nodes.html#_enroll_nodes_in_an_existing_cluster_5" class="ulink" target="_top">Enroll nodes in an existing cluster</a>.</p>
+</div>
+</div>
+<p>Return to your terminal shell on the first Elasticsearch node and generate a node enrollment token:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Copy the generated enrollment token from the command output.</p>
+<div class="tip admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>Note the following tips about enrollment tokens:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+An enrollment token has a lifespan of 30 minutes. In case the <code class="literal">elasticsearch-reconfigure-node</code> command returns an <code class="literal">Invalid enrollment token</code> error, try generating a new token.
+</li>
+<li class="listitem">
+Be sure not to confuse an <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/starting-elasticsearch.html#_enroll_nodes_in_an_existing_cluster_3" class="ulink" target="_top">Elasticsearch enrollment token</a> (for enrolling Elasticsearch nodes in an existing cluster) with a <a href="https://www.elastic.co/guide/en/kibana/master/start-stop.html#_run_kibana_from_the_command_line" class="ulink" target="_top">Kibana enrollment token</a> (to enroll your Kibana instance with Elasticsearch, as described in the next section). These two tokens are not interchangeable.
+</li>
+</ol>
+</div>
+</div>
+</div>
+</li>
+<li class="listitem">
+<p>In the terminal shell for your second Elasticsearch node, pass the enrollment token as a parameter to the <code class="literal">elasticsearch-reconfigure-node</code> tool:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-reconfigure-node --enrollment-token &lt;enrollment-token&gt;</pre>
+</div>
+<p>In the command, replace <code class="literal">&lt;enrollment-token</code> with the <code class="literal">elastic</code> generated token that you copied.</p>
+</li>
+<li class="listitem">
+Answer the <code class="literal">Do you want to continue</code> prompt with <code class="literal">yes</code> (<code class="literal">y</code>). The new Elasticsearch node will be reconfigured.
+</li>
+<li class="listitem">
+In a terminal, run <code class="literal">ifconfig</code> and copy the value for the host inet IP address. You&#8217;ll need this value later.
+</li>
+<li class="listitem">
+<p>Open the second Elasticsearch instance configuration file in a text editor:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo vim /etc/elasticsearch/elasticsearch.yml</pre>
+</div>
+<p>Notice that, as a result of having run the <code class="literal">elasticsearch-reconfigure-node</code> tool, certain settings have been updated. For example:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+The <code class="literal">transport.host: 0.0.0.0</code> setting is already uncommented.
+</li>
+<li class="listitem">
+The <code class="literal">discovery_seed.hosts</code> setting has the value that you added for <code class="literal">network_host</code> on the first Elasticsearch node. As you add each new Elasticsearch node to the cluster, the <code class="literal">discovery_seed.hosts</code> setting will contain an array of the IP addresses and port numbers to connect to each Elasticsearch node that was previously added to the cluster.
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>In the configuration file, uncomment the line <code class="literal">#cluster.name: my-application</code> and set it to match the name you specified for the first Elasticsearch node:</p>
+<div class="pre_wrapper lang-yaml">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-yaml">cluster.name: elasticsearch-demo</pre>
+</div>
+</li>
+<li class="listitem">
+<p>As with the first Elasticsearch node, you&#8217;ll need to set up Elasticsearch to run on a routable, external IP address. Uncomment the line <code class="literal">#network.host: 92.168.0.1</code> and replace the default address with the value that you copied. For example:</p>
+<div class="pre_wrapper lang-yaml">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-yaml">network.host: 10.128.0.132</pre>
+</div>
+</li>
+<li class="listitem">
+Save your changes and close the editor.
+</li>
+<li class="listitem">
+<p>Start Elasticsearch on the second node:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo systemctl start elasticsearch.service</pre>
+</div>
+</li>
+<li class="listitem">
+<p><span class="strong strong"><strong>Optionally</strong></span>, to view the progress as the second Elasticsearch node starts up and connects to the first Elasticsearch node, open a new terminal into the second node and <code class="literal">tail</code> the Elasticsearch log file:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo tail -f /var/log/elasticsearch/elasticsearch-demo.log</pre>
+</div>
+<p>Notice in the log file some helpful diagnostics, such as:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<code class="literal">Security is enabled</code>
+</li>
+<li class="listitem">
+<code class="literal">Profiling is enabled</code>
+</li>
+<li class="listitem">
+<code class="literal">using discovery type [multi-node]</code>
+</li>
+<li class="listitem">
+<code class="literal">intialized</code>
+</li>
+<li class="listitem">
+<p><code class="literal">starting...</code></p>
+<p>After a minute or so, the log should show a message like:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">[&lt;hostname2&gt;] master node changed {previous [], current [&lt;hostname1&gt;...]}</pre>
+</div>
+<p>Here, <code class="literal">hostname1</code> is your first Elasticsearch instance node, and <code class="literal">hostname2</code> is your second Elasticsearch instance node.</p>
+<p>The message indicates that the second Elasticsearch node has successfully contacted the initial Elasticsearch node and joined the cluster.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>As a final check, run the following <code class="literal">curl</code> request on the new node to confirm that Elasticsearch is still running properly and viewable at the new node&#8217;s <code class="literal">localhost</code> IP address. Note that you need to replace <code class="literal">$ELASTIC_PASSWORD</code> with the same <code class="literal">elastic</code> superuser password that you used on the first Elasticsearch node.</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo curl --cacert /etc/elasticsearch/certs/http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200</pre>
+</div>
+<div class="pre_wrapper lang-js">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-js">{
+  "name" : "Cp9oae6",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "AT69_C_DTp-1qgIJlatQqA",
+  "version" : {
+    "number" : "{version_qualified}",
+    "build_type" : "{build_type}",
+    "build_hash" : "f27399d",
+    "build_flavor" : "default",
+    "build_date" : "2016-03-30T09:51:41.449Z",
+    "build_snapshot" : false,
+    "lucene_version" : "{lucene_version}",
+    "minimum_wire_compatibility_version" : "1.2.3",
+    "minimum_index_compatibility_version" : "1.2.3"
+  },
+  "tagline" : "You Know, for Search"
+}</pre>
+</div>
+</li>
+</ol>
+</div>
+<div class="position-relative"><h2><a id="install-stack-self-elasticsearch-third"></a>Step 5: Set up additional Elasticsearch nodes</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-self.asciidoc">edit</a></div>
+<p>To set up your next Elasticsearch node, follow exactly the same steps as you did previously in <a class="xref" href="installing-elastic-stack.html#install-stack-self-elasticsearch-second" title="Step 4: Set up a second Elasticsearch node">Step 4: Set up a second Elasticsearch node</a>. The process is identical for each additional Elasticsearch node that you would like to add to the cluster. As a recommended best practice, create a new enrollment token for each new node that you add.</p>
+<div class="position-relative"><h2><a id="install-stack-self-kibana"></a>Step 6: Install Kibana</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-self.asciidoc">edit</a></div>
+<p>As with Elasticsearch, you can use RPM to install Kibana on another host. You can find details about all of the following steps in the section <a href="https://www.elastic.co/guide/en/kibana/master/rpm.html#install-rpm" class="ulink" target="_top">Install Kibana with RPM</a>.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>Log in to the host where you&#8217;d like to install Kibana and create a working directory for the installation package:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">mkdir kibana-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Change into the new directory:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">cd kibana-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Download the Kibana RPM and checksum file from the Elastic website.</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">wget https://artifacts.elastic.co/downloads/kibana/kibana-9.0.0-beta1-x86_64.rpm
+wget https://artifacts.elastic.co/downloads/kibana/kibana-9.0.0-beta1-x86_64.rpm.sha512</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Confirm the validity of the downloaded package by checking the SHA of the downloaded RPM against the published checksum:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">shasum -a 512 -c kibana-9.0.0-beta1-x86_64.rpm.sha512</pre>
+</div>
+<p>The command should return: <code class="literal">kibana-{version}-x86_64.rpm: OK</code>.</p>
+</li>
+<li class="listitem">
+<p>Run the Kibana install command:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo rpm --install kibana-9.0.0-beta1-x86_64.rpm</pre>
+</div>
+</li>
+<li class="listitem">
+<p>As with each additional Elasticsearch node that you added, to enable this Kibana instance to connect to the first Elasticsearch node, you need to configure an enrollment token.</p>
+<p>Return to your terminal shell into the first Elasticsearch node.</p>
+</li>
+<li class="listitem">
+<p>Run the <code class="literal">elasticsearch-create-enrollment-token</code> command with the <code class="literal">-s kibana</code> option to generate a Kibana enrollment token:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana</pre>
+</div>
+</li>
+<li class="listitem">
+Copy the generated enrollment token from the command output.
+</li>
+<li class="listitem">
+<p>Back on the Kibana host, run the following two commands to enable Kibana to run as a service using <code class="literal">systemd</code>, enabling Kibana to start automatically when the host system reboots.</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo systemctl daemon-reload
+sudo systemctl enable kibana.service</pre>
+</div>
+</li>
+<li class="listitem">
+Before starting the Kibana service there&#8217;s one configuration change to make, to set Kibana to run on the Elasticsearch host IP address. This is done by updating the settings in the <code class="literal">kibana.yml</code> file. For details about all available settings refer to <a href="https://www.elastic.co/guide/en/kibana/master/settings.html" class="ulink" target="_top">Configure Kibana</a>.
+</li>
+<li class="listitem">
+In a terminal, run the <code class="literal">ifconfig</code> command and copy the value for the host inet IP address.
+</li>
+<li class="listitem">
+<p>Open the Kibana configuration file for editing:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo vim /etc/kibana/kibana.yml</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Uncomment the line <code class="literal">#server.host: localhost</code> and replace the default address with the inet value that you copied from the <code class="literal">ifconfig</code> command. For example:</p>
+<div class="pre_wrapper lang-yaml">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-yaml">server.host: 10.128.0.28</pre>
+</div>
+</li>
+<li class="listitem">
+Save your changes and close the editor.
+</li>
+<li class="listitem">
+<p>Start the Kibana service:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo systemctl start kibana.service</pre>
+</div>
+<p>If you need to, you can stop the service by running <code class="literal">sudo systemctl stop kibana.service</code>.</p>
+</li>
+<li class="listitem">
+<p>Run the <code class="literal">status</code> command to get details about the Kibana service.</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">sudo systemctl status kibana</pre>
+</div>
+</li>
+<li class="listitem">
+<p>In the <code class="literal">status</code> command output, a URL is shown with:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+A host address to access Kibana
+</li>
+<li class="listitem">
+<p>A six digit verification code</p>
+<p>For example:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">Kibana has not been configured.
+Go to http://10.128.0.28:5601/?code=&lt;code&gt; to get started.</pre>
+</div>
+<p>Make a note of the verification code.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>Open a web browser to the external IP address of the Kibana host machine, for example: <code class="literal">http://&lt;kibana-host-address&gt;:5601</code>.</p>
+<p>It can take a minute or two for Kibana to start up, so refresh the page if you don&#8217;t see a prompt right away.</p>
+</li>
+<li class="listitem">
+When Kibana starts you&#8217;re prompted to provide an enrollment token. Paste in the Kibana enrollment token that you generated earlier.
+</li>
+<li class="listitem">
+Click <span class="strong strong"><strong>Configure Elastic</strong></span>.
+</li>
+<li class="listitem">
+If you&#8217;re prompted to provide a verification code, copy and paste in the six digit code that was returned by the <code class="literal">status</code> command. Then, wait for the setup to complete.
+</li>
+<li class="listitem">
+When you see the <span class="strong strong"><strong>Welcome to Elastic</strong></span> page, provide the <code class="literal">elastic</code> as the username and provide the password that you copied in Step 1, from the <code class="literal">install</code> command output when you set up your first Elasticsearch node.
+</li>
+<li class="listitem">
+Click <span class="strong strong"><strong>Log in</strong></span>.
+</li>
+</ol>
+</div>
+<p>Kibana is now fully set up and communicating with your Elasticsearch cluster!</p>
+<p><span class="strong strong"><strong>IMPORTANT: Stop here if you intend to configure SSL certificates.</strong></span></p>
+<div class="important admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>For simplicity, in this tutorial we&#8217;re setting up all of the Elastic Stack components without configuring security certificates. You can proceed to configure Fleet, Elastic Agent, and then confirm that your system data appears in Kibana.</p>
+<p>However, in a production environment, before going further to install Fleet Server and Elastic Agent it&#8217;s recommended to update your security settings to use trusted CA-signed certificates as described in <a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure" title="Tutorial 2: Securing a self-managed Elastic Stack">Tutorial 2: Securing a self-managed Elastic Stack</a>.</p>
+<p>After new security certificates are configured any Elastic Agents would need to be reinstalled. If you&#8217;re currently setting up a production environment, we recommend that you jump directly to Tutorial 2, which includes steps to secure the Elastic Stack using certificates and then to set up Fleet and Elastic Agent with those certificates already in place.</p>
+</div>
+</div>
+<div class="position-relative"><h2><a id="install-stack-self-fleet-server"></a>Step 7: Install Fleet Server</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-self.asciidoc">edit</a></div>
+<p>Now that Kibana is up and running, you can install Fleet Server, which will manage the Elastic Agent that you&#8217;ll set up in a later step. If you need more detail about these steps, refer to <a href="https://www.elastic.co/guide/en/fleet/master/add-fleet-server-on-prem.html" class="ulink" target="_top">Deploy on-premises and self-managed</a> in the Fleet and Elastic Agent Guide.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Log in to the host where you&#8217;d like to set up Fleet Server.
+</li>
+<li class="listitem">
+<p>Create a working directory for the installation package:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">mkdir fleet-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Change into the new directory:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">cd fleet-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+In the terminal, run <code class="literal">ifconfig</code> and copy the value for the host inet IP address (for example, <code class="literal">10.128.0.84</code>). You&#8217;ll need this value later.
+</li>
+<li class="listitem">
+Back to your web browser, open the Kibana menu and go to <span class="strong strong"><strong>Management &#8594; Fleet</strong></span>. Fleet opens with a message that you need to add a Fleet Server.
+</li>
+<li class="listitem">
+Click <span class="strong strong"><strong>Add Fleet Server</strong></span>. The <span class="strong strong"><strong>Add a Fleet Server</strong></span> flyout opens.
+</li>
+<li class="listitem">
+In the flyout, select the <span class="strong strong"><strong>Quick Start</strong></span> tab.
+</li>
+<li class="listitem">
+Specify a name for your Fleet Server host, for example <code class="literal">Fleet Server</code>.
+</li>
+<li class="listitem">
+<p>Specify the host URL where Elastic Agents will reach Fleet Server, for example: <code class="literal">http://10.128.0.203:8220</code>. This is the inet value that you copied from the <code class="literal">ifconfig</code> output.</p>
+<p>Be sure to include the port number. Port <code class="literal">8220</code> is the default used by Fleet Server in an on-premises environment. Refer to <a href="https://www.elastic.co/guide/en/fleet/master/add-fleet-server-on-prem.html#default-port-assignments-on-prem" class="ulink" target="_top">Default port assignments</a> in the on-premises Fleet Server install documentation for a list of port assignments.</p>
+</li>
+<li class="listitem">
+Click <span class="strong strong"><strong>Generate Fleet Server policy</strong></span>. A policy is created that contains all of the configuration settings for the Fleet Server instance.
+</li>
+<li class="listitem">
+<p>On the <span class="strong strong"><strong>Install Fleet Server to a centralized host</strong></span> step, for this example we select the <span class="strong strong"><strong>Linux Tar</strong></span> tab, but you can instead select the tab appropriate to the host operating system where you&#8217;re setting up Fleet Server.</p>
+<p>Note that TAR/ZIP packages are recommended over RPM/DEB system packages, since only the former support upgrading Fleet Server using Fleet.</p>
+</li>
+<li class="listitem">
+<p>Copy the generated commands and then run them one-by-one in the terminal on your Fleet Server host.</p>
+<p>These commands will, respectively:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Download the Fleet Server package from the Elastic Artifact Registry.
+</li>
+<li class="listitem">
+Unpack the package archive.
+</li>
+<li class="listitem">
+Change into the directory containing the install binaries.
+</li>
+<li class="listitem">
+<p>Install Fleet Server.</p>
+<p>If you&#8217;d like to learn about the install command options, refer to <a href="https://www.elastic.co/guide/en/fleet/master/elastic-agent-cmd-options.html#elastic-agent-install-command" class="ulink" target="_top"><code class="literal">elastic-agent install</code></a> in the Elastic Agent command reference.</p>
+</li>
+</ol>
+</div>
+</li>
+<li class="listitem">
+At the prompt, enter <code class="literal">Y</code> to install Elastic Agent and run it as a service. Wait for the installation to complete.
+</li>
+<li class="listitem">
+In the Kibana <span class="strong strong"><strong>Add a Fleet Server</strong></span> flyout, wait for confirmation that Fleet Server has connected.
+</li>
+<li class="listitem">
+For now, ignore the <span class="strong strong"><strong>Continue enrolling Elastic Agent</strong></span> option and close the flyout.
+</li>
+</ol>
+</div>
+<p>Fleet Server is now fully set up!</p>
+<div class="position-relative"><h2><a id="install-stack-self-elastic-agent"></a>Step 8: Install Elastic Agent</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-self.asciidoc">edit</a></div>
+<p>Next, you&#8217;ll install Elastic Agent on another host and use the System integration to monitor system logs and metrics.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Log in to the host where you&#8217;d like to set up Elastic Agent.
+</li>
+<li class="listitem">
+<p>Create a working directory for the installation package:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">mkdir agent-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Change into the new directory:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">cd agent-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+Open Kibana and go to <span class="strong strong"><strong>Management &#8594; Fleet</strong></span>.
+</li>
+<li class="listitem">
+On the <span class="strong strong"><strong>Agents</strong></span> tab, you should see your new Fleet Server policy running with a healthy status.
+</li>
+<li class="listitem">
+Open the <span class="strong strong"><strong>Settings</strong></span> tab.
+</li>
+<li class="listitem">
+Reopen the <span class="strong strong"><strong>Agents</strong></span> tab and select <span class="strong strong"><strong>Add agent</strong></span>. The <span class="strong strong"><strong>Add agent</strong></span> flyout opens.
+</li>
+<li class="listitem">
+In the flyout, choose a policy name, for example <code class="literal">Demo Agent Policy</code>.
+</li>
+<li class="listitem">
+Leave <span class="strong strong"><strong>Collect system logs and metrics</strong></span> enabled. This will add the <a href="https://docs.elastic.co/integrations/system" class="ulink" target="_top">System integration</a> to the Elastic Agent policy.
+</li>
+<li class="listitem">
+Click <span class="strong strong"><strong>Create policy</strong></span>.
+</li>
+<li class="listitem">
+For the <span class="strong strong"><strong>Enroll in Fleet?</strong></span> step, leave <span class="strong strong"><strong>Enroll in Fleet</strong></span> selected.
+</li>
+<li class="listitem">
+<p>On the <span class="strong strong"><strong>Install Elastic Agent on your host</strong></span> step, for this example we select the <span class="strong strong"><strong>Linux Tar</strong></span> tab, but you can instead select the tab appropriate to the host operating system where you&#8217;re setting up Fleet Server.</p>
+<p>As with Fleet Server, note that TAR/ZIP packages are recommended over RPM/DEB system packages, since only the former support upgrading Elastic Agent using Fleet.</p>
+</li>
+<li class="listitem">
+Copy the generated commands.
+</li>
+<li class="listitem">
+<p>In the <code class="literal">sudo ./elastic-agent install</code> command, make two changes:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+For the <code class="literal">--url</code> parameter, check that the port number is set to <code class="literal">8220</code> (used for on-premises Fleet Server).
+</li>
+<li class="listitem">
+<p>Append an <code class="literal">--insecure</code> flag at the end.</p>
+<div class="tip admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>If you want to set up secure communications using SSL certificates, refer to <a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure" title="Tutorial 2: Securing a self-managed Elastic Stack">Tutorial 2: Securing a self-managed Elastic Stack</a>.</p>
+</div>
+</div>
+<p>The result should be like the following:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo ./elastic-agent install --url=https://10.128.0.203:8220 --enrollment-token=VWCobFhKd0JuUnppVYQxX0VKV5E6UmU3BGk0ck9RM2HzbWEmcS4Bc1YUUM==</pre>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li class="listitem">
+<p>Run the commands one-by-one in the terminal on your Elastic Agent host. The commands will, respectively:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Download the Elastic Agent package from the Elastic Artifact Registry.
+</li>
+<li class="listitem">
+Unpack the package archive.
+</li>
+<li class="listitem">
+Change into the directory containing the install binaries.
+</li>
+<li class="listitem">
+Install Elastic Agent.
+</li>
+</ol>
+</div>
+</li>
+<li class="listitem">
+<p>At the prompt, enter <code class="literal">Y</code> to install Elastic Agent and run it as a service. Wait for the installation to complete.</p>
+<p>If everything goes well, the install will complete successfully:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">Elastic Agent has been successfully installed.</pre>
+</div>
+</li>
+<li class="listitem">
+In the Kibana <span class="strong strong"><strong>Add agent</strong></span> flyout, wait for confirmation that Elastic Agent has connected.
+</li>
+<li class="listitem">
+Close the flyout.
+</li>
+</ol>
+</div>
+<p>Your new Elastic Agent is now installed an enrolled with Fleet Server.</p>
+<div class="position-relative"><h2><a id="install-stack-self-view-data"></a>Step 9: View your system data</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-self.asciidoc">edit</a></div>
+<p>Now that all of the components have been installed, it&#8217;s time to view your system data.</p>
+<p>View your system log data:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Open the Kibana menu and go to <span class="strong strong"><strong>Analytics &#8594; Dashboard</strong></span>.
+</li>
+<li class="listitem">
+In the query field, search for <code class="literal">Logs System</code>.
+</li>
+<li class="listitem">
+Select the <code class="literal">[Logs System] Syslog dashboard</code> link. The Kibana Dashboard opens with visualizations of Syslog events, hostnames and processes, and more.
+</li>
+</ol>
+</div>
+<p>View your system metrics data:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Open the Kibana menu and return to <span class="strong strong"><strong>Analytics &#8594; Dashboard</strong></span>.
+</li>
+<li class="listitem">
+In the query field, search for <code class="literal">Metrics System</code>.
+</li>
+<li class="listitem">
+<p>Select the <code class="literal">[Metrics System] Host overview</code> link. The Kibana Dashboard opens with visualizations of host metrics including CPU usage, memory usage, running processes, and others.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/install-stack-metrics-dashboard.png" alt="The System metrics host overview showing CPU usage, memory usage, and other visualizations">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<p>Congratulations! You&#8217;ve successfully set up a three node Elasticsearch cluster, with Kibana, Fleet Server, and Elastic Agent.</p>
+<div class="position-relative"><h2><a id="install-stack-self-next-steps"></a>Next steps</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-self.asciidoc">edit</a></div>
+<p>Now that you&#8217;ve successfully configured an on-premises Elastic Stack, you can learn how to configure the Elastic Stack in a production environment using trusted CA-signed certificates. Refer to <a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure" title="Tutorial 2: Securing a self-managed Elastic Stack">Tutorial 2: Securing a self-managed Elastic Stack</a> to learn more.</p>
+<p>You can also start using your newly set up Elastic Stack right away:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Do you have data ready to ingest? Learn how to <a href="https://www.elastic.co/guide/en/cloud/current/ec-cloud-ingest-data.html" class="ulink" target="_top">add data to Elasticsearch</a>.
+</li>
+<li class="listitem">
+Use <a href="https://www.elastic.co/observability" class="ulink" target="_top">Elastic Observability</a>
+to unify your logs, infrastructure metrics, uptime, and application performance data.
+</li>
+<li class="listitem">
+Want to protect your endpoints from security threats? Try
+<a href="https://www.elastic.co/security" class="ulink" target="_top">Elastic Security</a>. Adding endpoint protection is
+just another integration that you add to the agent policy!
+</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<div class="titlepage"><div><div>
+<div class="position-relative"><h2 class="title"><a id="install-stack-demo-secure"></a>Tutorial 2: Securing a self-managed Elastic Stack</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-secure.asciidoc">edit</a></div>
+</div></div></div>
+<p>This tutorial is a follow-on to <a class="xref" href="installing-elastic-stack.html#installing-stack-demo-self" title="Tutorial 1: Installing a self-managed Elastic Stack">Tutorial 1: Installing a self-managed Elastic Stack</a>. The first tutorial describes how to configure a multi-node Elasticsearch cluster and then set up Kibana, followed by Fleet Server and Elastic Agent. In a production environment, it&#8217;s recommended after completing the Kibana setup to proceed directly to this tutorial to configure your SSL certificates. These steps guide you through that process, and then describe how to configure Fleet Server and Elastic Agent with the certificates in place.</p>
+<p><span class="strong strong"><strong>Securing the Elastic Stack</strong></span></p>
+<p>Beginning with Elastic 8.0, security is enabled in the Elastic Stack by default, meaning that traffic between Elasticsearch nodes and between Kibana and Elasticsearch is SSL-encrypted. While this is suitable for testing non-production viability of the Elastic platform, most production networks have requirements for the use of trusted CA-signed certificates. These steps demonstrate how to update the out-of-the-box self-signed certificates with your own trusted CA-signed certificates.</p>
+<p>For traffic to be encrypted between Elasticsearch cluster nodes and between Kibana and Elasticsearch, SSL certificates must be created for the transport (Elasticsearch inter-node communication) and HTTP (for the Elasticsearch REST API) layers. Similarly, when setting up Fleet Server you&#8217;ll generate and configure a new certificate bundle, and then Elastic Agent uses the generated certificates to communicate with both Fleet Server and Elasticsearch. The process to set things up is as follows:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure-prereqs" title="Prerequisites and assumptions">Prerequisites and assumptions</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure-ca" title="Step 1: Generate a new self-signed CA certificate">Step 1: Generate a new self-signed CA certificate</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure-transport" title="Step 2: Generate a new certificate for the transport layer">Step 2: Generate a new certificate for the transport layer</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure-http" title="Step 3: Generate new certificate(s) for the HTTP layer">Step 3: Generate new certificate(s) for the HTTP layer</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure-second-node" title="Step 4: Configure security on additional Elasticsearch nodes">Step 4: Configure security on additional Elasticsearch nodes</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure-kib-es" title="Step 5: Generate server-side and client-side certificates for Kibana">Step 5: Generate server-side and client-side certificates for Kibana</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure-fleet" title="Step 6: Install Fleet with SSL certificates configured">Step 6: Install Fleet with SSL certificates configured</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure-agent" title="Step 7: Install Elastic Agent">Step 7: Install Elastic Agent</a>
+</li>
+<li class="listitem">
+<a class="xref" href="installing-elastic-stack.html#install-stack-demo-secure-view-data" title="Step 8: View your system data">Step 8: View your system data</a>
+</li>
+</ul>
+</div>
+<p>It should take between one and two hours to complete these steps.</p>
+<div class="position-relative"><h2><a id="install-stack-demo-secure-prereqs"></a>Prerequisites and assumptions</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-secure.asciidoc">edit</a></div>
+<p>Before starting, you&#8217;ll need to have set up an on-premises Elasticsearch cluster with Kibana, following the steps in <a class="xref" href="installing-elastic-stack.html#installing-stack-demo-self" title="Tutorial 1: Installing a self-managed Elastic Stack">Tutorial 1: Installing a self-managed Elastic Stack</a>.</p>
+<p>The examples in this guide use RPM packages to install the Elastic Stack components on hosts running Red Hat Enterprise Linux 8. The steps for other install methods and operating systems are similar, and can be found in the documentation linked from each section.</p>
+<p>Special considerations such as firewalls and proxy servers are not covered here.</p>
+<div class="position-relative"><h2><a id="install-stack-demo-secure-ca"></a>Step 1: Generate a new self-signed CA certificate</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-secure.asciidoc">edit</a></div>
+<p>In a production environment you would typically use the CA certificate from your own organization, along with the certificate files generated for the hosts where the Elastic Stack is being installed. For demonstration purposes, we&#8217;ll use the Elastic certificate utility to configure a self-signed CA certificate.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>On the first node in your Elasticsearch cluster, stop the Elasticsearch service:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo systemctl stop elasticsearch.service</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Generate a CA certificate using the provided certificate utility, <code class="literal">elasticsearch-certutil</code>. Note that the location of the utility depends on the installation method you used to install Elasticsearch. Refer to <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/certutil.html" class="ulink" target="_top">elasticsearch-certutil</a> for the command details and to <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/update-node-certs-different.html" class="ulink" target="_top">Update security certificates with a different CA</a> for details about the procedure as a whole.</p>
+<p>Run the following command. When prompted, specify a unique name for the output file, such as <code class="literal">elastic-stack-ca.zip</code>:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-certutil ca -pem</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Move the output file to the <code class="literal">/etc/elasticsearch/certs</code> directory. This directory is created automatically when you install Elasticsearch.</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo mv /usr/share/elasticsearch/elastic-stack-ca.zip /etc/elasticsearch/certs/</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Unzip the file:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo unzip -d /etc/elasticsearch/certs /etc/elasticsearch/certs/elastic-stack-ca.zip</pre>
+</div>
+</li>
+<li class="listitem">
+<p>View the files that were unpacked into a new <code class="literal">ca</code> directory:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo ls /etc/elasticsearch/certs/ca/</pre>
+</div>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<code class="literal">ca.crt</code>
+</span>
+</dt>
+<dd>
+The generated certificate (or you can substitute this with your own certificate, signed by your organizations&#8217;s certificate authority)
+</dd>
+<dt>
+<span class="term">
+<code class="literal">ca.key</code>
+</span>
+</dt>
+<dd>
+The certificate authority&#8217;s private key
+</dd>
+</dl>
+</div>
+<p>These steps to generate new self-signed CA certificates need to be done only on the first Elasticsearch node. The other Elasticsearch nodes will use the same <code class="literal">ca.crt</code> and <code class="literal">ca.key</code> files.</p>
+</li>
+<li class="listitem">
+<p>From the <code class="literal">/etc/elasticsearch/certs/ca/</code> directory, import the newly created CA certificate into the Elasticsearch truststore. This step ensures that your cluster trusts the new CA certificate.</p>
+<div class="note admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>On a new installation a new keystore and truststore are created automatically. If you&#8217;re running these steps on an existing Elasticsearch installation and you know the password to the keystore and the truststore, follow the instructions in <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/update-node-certs-different.html" class="ulink" target="_top">Update security certificates with a different CA</a> to import the CA certificate.</p>
+</div>
+</div>
+<p>Run the <code class="literal">keytool</code> command as shown, replacing <code class="literal">&lt;password&gt;</code> with a unique password for the truststore, and store the password securely:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/jdk/bin/keytool -importcert -trustcacerts -noprompt -keystore /etc/elasticsearch/certs/elastic-stack-ca.p12 -storepass &lt;password&gt; -alias new-ca -file /etc/elasticsearch/certs/ca/ca.crt</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Ensure that the new key was added to the keystore:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/jdk/bin/keytool -keystore /etc/elasticsearch/certs/elastic-stack-ca.p12 -list</pre>
+</div>
+<div class="note admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>The keytool utility is provided as part of the Elasticsearch installation and is located at: <code class="literal">/usr/share/elasticsearch/jdk/bin/keytool</code> on RPM installations.</p>
+</div>
+</div>
+<p>Enter your password when prompted. The result should show the details for your newly added key:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">Keystore type: jks
+Keystore provider: SUN
+Your keystore contains 1 entry
+new-ca, Jul 12, 2023, trustedCertEntry,
+Certificate fingerprint (SHA-256): F0:86:6B:57:FC...</pre>
+</div>
+</li>
+</ol>
+</div>
+<div class="position-relative"><h2><a id="install-stack-demo-secure-transport"></a>Step 2: Generate a new certificate for the transport layer</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-secure.asciidoc">edit</a></div>
+<p>This guide assumes the use of self-signed certificates, but the process to import CA-signed certificates is the same. If you&#8217;re using a CA provided by your organization, you need to generate Certificate Signing Requests (CSRs) and then use the signed certificates in this step. Once the certificates are generated, whether self-signed or CA-signed, the steps are the same.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>From the Elasticsearch installation directory, using the newly-created CA certificate and private key, create a new certificate for your elasticsearch node:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-certutil cert --ca-cert /etc/elasticsearch/certs/ca/ca.crt --ca-key /etc/elasticsearch/certs/ca/ca.key</pre>
+</div>
+<p>When prompted, choose an output file name (you can use the default <code class="literal">elastic-certificates.p12</code>) and a password for the certificate.</p>
+</li>
+<li class="listitem">
+<p>Move the generated file to the <code class="literal">/etc/elasticsearch/certs</code> directory:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo mv /usr/share/elasticsearch/elastic-certificates.p12 /etc/elasticsearch/certs/</pre>
+</div>
+<div class="important admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>If you&#8217;re running these steps on a production cluster that already contains data:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+In a cluster with multiple Elasticsearch nodes, before proceeding you first need to perform a <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/restart-cluster.html#restart-cluster-rolling" class="ulink" target="_top">Rolling restart</a> beginning with the node where you&#8217;re updating the keystore. Stop at the <code class="literal">Perform any needed changes</code> step, and then proceed to the next step in this guide.
+</li>
+<li class="listitem">
+In a single node cluster, always stop Elasticsearch before proceeding.
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="listitem">
+<p>Because you&#8217;ve created a new truststore and keystore, you need to update the <code class="literal">/etc/elasticsearch/elasticsearch.yml</code> settings file with the new truststore and keystore filenames.</p>
+<p>Open the Elasticsearch configuration file in a text editor and adjust the following values to reflect the newly created keystore and truststore filenames and paths:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">xpack.security.transport.ssl:
+   ...
+   keystore.path: /etc/elasticsearch/certs/elastic-certificates.p12
+   truststore.path: /etc/elasticsearch/certs/elastic-stack-ca.p12</pre>
+</div>
+</li>
+</ol>
+</div>
+<div class="position-relative"><h3><a id="install-stack-demo-secure-transport-es-keystore"></a>Update the Elasticsearch keystore</h3><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-secure.asciidoc">edit</a></div>
+<p>Elasticsearch uses a separate keystore to hold the passwords of the keystores and truststores holding the CA and node certificates created in the previous steps. Access to this keystore is through the use of a utility called <code class="literal">elasticsearch-keystore</code>.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>From the Elasticsearch installation directory, list the contents of the existing keystore:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-keystore list</pre>
+</div>
+<p>The results should be like the following:</p>
+<div class="pre_wrapper lang-yaml">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-yaml">keystore.seed
+xpack.security.http.ssl.keystore.secure_password
+xpack.security.transport.ssl.keystore.secure_password
+xpack.security.transport.ssl.truststore.secure_password</pre>
+</div>
+<p>Notice that there are entries for:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+The <code class="literal">transport.ssl.truststore</code> that holds the CA certificate
+</li>
+<li class="listitem">
+The <code class="literal">transport.ssl.keystore</code> that holds the CA-signed certificates
+</li>
+<li class="listitem">
+<p>The <code class="literal">http.ssl.keystore</code> for the HTTP layer</p>
+<p>These entries were created at installation and need to be replaced with the passwords to the newly-created truststore and keystores.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>Remove the existing keystore values for the default transport keystore and truststore:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-keystore remove xpack.security.transport.ssl.keystore.secure_password
+
+sudo /usr/share/elasticsearch/bin/elasticsearch-keystore remove xpack.security.transport.ssl.truststore.secure_password</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Update the <code class="literal">elasticsearch-keystore</code> with the passwords for the new keystore and truststore created in the previous steps. This ensures that Elasticsearch can read the new stores:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-keystore add xpack.security.transport.ssl.keystore.secure_password
+
+sudo /usr/share/elasticsearch/bin/elasticsearch-keystore add xpack.security.transport.ssl.truststore.secure_password</pre>
+</div>
+</li>
+</ol>
+</div>
+<div class="position-relative"><h2><a id="install-stack-demo-secure-http"></a>Step 3: Generate new certificate(s) for the HTTP layer</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-secure.asciidoc">edit</a></div>
+<p>Now that communication between Elasticsearch nodes (the transport layer) has been secured with SSL certificates, the same must be done for the communications that use the REST API, including Kibana, clients, and any other components on the HTTP layer.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>Similar to the process for the transport layer, on the first node in your Elasticsearch cluster use the certificate utility to generate a CA certificate for HTTP communications:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-certutil http</pre>
+</div>
+<p>Respond to the command prompts as follows:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+When asked if you want to generate a CSR, enter <code class="literal">n</code>.
+</li>
+<li class="listitem">
+<p>When asked if you want to use an existing CA, enter <code class="literal">y</code>.</p>
+<div class="note admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>If you&#8217;re using your organization&#8217;s CA certificate, specify that certificate and key in the following two steps.</p>
+</div>
+</div>
+</li>
+<li class="listitem">
+Provide the absolute path to your newly created CA certificate: <code class="literal">/etc/elasticsearch/certs/ca/ca.crt</code>.
+</li>
+<li class="listitem">
+Provide the absolute path to your newly created CA key: <code class="literal">/etc/elasticsearch/certs/ca/ca.key</code>.
+</li>
+<li class="listitem">
+Enter an expiration value for your certificate. You can enter the validity period in years, months, or days. For example, enter <code class="literal">1y</code> for one year.
+</li>
+<li class="listitem">
+<p>When asked if you want to generate one certificate per node, enter <code class="literal">y</code>.</p>
+<p>You&#8217;ll be guided through the creation of certificates for each node. Each certificate will have its own private key, and will be issued for a specific hostname or IP address.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>Enter the hostname for your first Elasticsearch node, for example <code class="literal">mynode-es1</code>.</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">mynode-es1</pre>
+</div>
+</li>
+<li class="listitem">
+When prompted, confirm that the settings are correct.
+</li>
+<li class="listitem">
+<p>Add the network IP address that clients can use to connect to the first Elasticsearch node. This is the same value that&#8217;s described in Step 2 of <a class="xref" href="installing-elastic-stack.html#installing-stack-demo-self" title="Tutorial 1: Installing a self-managed Elastic Stack">Tutorial 1: Installing a self-managed Elastic Stack</a>, for example <code class="literal">10.128.0.84</code>:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">10.128.0.84</pre>
+</div>
+</li>
+<li class="listitem">
+When prompted, confirm that the settings are correct.
+</li>
+<li class="listitem">
+When prompted, choose to generate additional certificates, and then repeat the previous steps to add hostname and IP settings for each node in your Elasticsearch cluster.
+</li>
+<li class="listitem">
+Provide a password for the generated <code class="literal">http.p12</code> keystore file.
+</li>
+<li class="listitem">
+<p>The generated files will be included in a zip archive. At the prompt, provide a path and filename for where the archive should be created.</p>
+<p>For this example we use: <code class="literal">/etc/elasticsearch/certs/elasticsearch-ssl-http.zip</code>:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">What filename should be used for the output zip file? [/usr/share/elasticsearch/elasticsearch-ssl-http.zip] /etc/elasticsearch/certs/elasticsearch-ssl-http.zip</pre>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>Earlier, when you generated the certificate for the transport layer, the default filename was <code class="literal">elastic-certificates.p12</code>. Now, when generating a certificate for the HTTP layer, the default filename is <code class="literal">http.p12</code>. This matches the name of the existing HTTP layer certificate file from when the initial Elasticsearch cluster was first installed.</p>
+<p>Just to avoid any possible name collisions, rename the existing <code class="literal">http.p12</code> file to distinguish it from the newly-created keystore:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo mv /etc/elasticsearch/certs/http.p12 /etc/elasticsearch/certs/http-old.p12</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Unzip the generated <code class="literal">elasticsearch-ssl-http.zip</code> archive:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo unzip -d /usr/share/elasticsearch/ /etc/elasticsearch/certs/elasticsearch-ssl-http.zip</pre>
+</div>
+</li>
+<li class="listitem">
+<p>When the archive is unpacked, the certificate files are located in separate directories for each Elasticsearch node and for the Kibana node.</p>
+<p>You can run a recursive <code class="literal">ls</code> command to view the file structure:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">ls -lR /usr/share/elasticsearch/{elasticsearch,kibana}</pre>
+</div>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">elasticsearch:
+total 0
+drwxr-xr-x. 2 root root 56 Dec 12 19:13 mynode-es1
+drwxr-xr-x. 2 root root 72 Dec 12 19:04 mynode-es2
+drwxr-xr-x. 2 root root 72 Dec 12 19:04 mynode-es3
+
+elasticsearch/mynode-es1:
+total 8
+-rw-r--r--. 1 root root 1365 Dec 12 19:04 README.txt
+-rw-r--r--. 1 root root  845 Dec 12 19:04 sample-elasticsearch.yml
+
+elasticsearch/mynode-es2:
+total 12
+-rw-r--r--. 1 root root 3652 Dec 12 19:04 http.p12
+-rw-r--r--. 1 root root 1365 Dec 12 19:04 README.txt
+-rw-r--r--. 1 root root  845 Dec 12 19:04 sample-elasticsearch.yml
+
+elasticsearch/mynode-es3:
+total 12
+-rw-r--r--. 1 root root 3652 Dec 12 19:04 http.p12
+-rw-r--r--. 1 root root 1365 Dec 12 19:04 README.txt
+-rw-r--r--. 1 root root  845 Dec 12 19:04 sample-elasticsearch.yml
+
+kibana:
+total 12
+-rw-r--r--. 1 root root 1200 Dec 12 19:04 elasticsearch-ca.pem
+-rw-r--r--. 1 root root 1306 Dec 12 19:04 README.txt
+-rw-r--r--. 1 root root 1052 Dec 12 19:04 sample-kibana.yml</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Replace your existing keystore with the new keystore. The location of your certificate directory may be different than what is shown here, depending on the installation method you chose.</p>
+<p>Run the <code class="literal">mv</code> command, replacing <code class="literal">&lt;es1-hostname&gt;</code> with the hostname of your initial Elasticsearch node:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo mv /usr/share/elasticsearch/elasticsearch/&lt;es1-hostname&gt;/http.p12 /etc/elasticsearch/certs/</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Because this is a new keystore, the Elasticsearch configuration file needs to be updated with the path to its location. Open <code class="literal">/etc/elasticsearch/elasticsearch.yml</code> and update the HTTP SSL settings with the new path:</p>
+<div class="pre_wrapper lang-yaml">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-yaml">xpack.security.http.ssl:
+  enabled: true
+  #keystore.path: certs/http.p12
+  keystore.path: /etc/elasticsearch/certs/http.p12</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Since you also generated a new keystore password, the Elasticsearch keystore needs to be updated as well. From the Elasticsearch installation directory, first remove the existing HTTP keystore entry:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-keystore remove xpack.security.http.ssl.keystore.secure_password</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Add the updated HTTP keystore password, using the password you generated for this keystore:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-keystore add xpack.security.http.ssl.keystore.secure_password</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Because we&#8217;ve added files to the Elasticsearch configuration directory during this tutorial, we need to ensure that the permissions and ownership are correct before restarting Elasticsearch.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>Change the files to be owned by <code class="literal">root:elasticsearch</code>:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo chown -R root:elasticsearch /etc/elasticsearch/certs/</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Set the files in <code class="literal">/etc/elasticsearch/certs</code> to have read and write permissions by the owner (<code class="literal">root</code>) and read permission by the <code class="literal">elastic</code> user:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo chmod 640 /etc/elasticsearch/certs/elastic-certificates.p12
+sudo chmod 640 /etc/elasticsearch/certs/elastic-stack-ca.p12
+sudo chmod 640 /etc/elasticsearch/certs/http_ca.crt
+sudo chmod 640 /etc/elasticsearch/certs/http.p12</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Change the <code class="literal">/etc/elasticsearch/certs</code> and <code class="literal">/etc/elasticsearch/certs/ca</code> directories to be executable by the owner:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo chmod 750 /etc/elasticsearch/certs
+sudo chmod 750 /etc/elasticsearch/certs/ca</pre>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li class="listitem">
+<p>Restart the Elasticsearch service:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo systemctl start elasticsearch.service</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Run the status command to confirm that Elasticsearch is running:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo systemctl status elasticsearch.service</pre>
+</div>
+<p>In the event of any problems, you can also monitor the Elasticsearch logs for any issues by tailing the Elasticsearch log file:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo tail -f /var/log/elasticsearch/elasticsearch-demo.log</pre>
+</div>
+<p>A line in the log file like the following indicates that SSL has been properly configured:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">[2023-07-12T13:11:29,154][INFO ][o.e.x.s.Security         ] [es-ssl-test] Security is enabled</pre>
+</div>
+</li>
+</ol>
+</div>
+<div class="position-relative"><h2><a id="install-stack-demo-secure-second-node"></a>Step 4: Configure security on additional Elasticsearch nodes</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-secure.asciidoc">edit</a></div>
+<p>Now that the security is configured for the first Elasticsearch node, some steps need to be repeated on each additional Elasticsearch node.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>To avoid filename collisions, on each additional Elasticsearch node rename the existing <code class="literal">http.p12</code> file in the <code class="literal">/etc/elasticsearch/certs/</code> directory:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">mv http.p12 http-old.p12</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Copy the CA and truststore files that you generated on the first Elasticsearch node so that they can be reused on all other nodes:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Copy the <code class="literal">/ca</code> directory (that contains <code class="literal">ca.crt</code> and <code class="literal">ca.key</code>) from <code class="literal">/etc/elasticsearch/certs/</code> on the first Elasticsearch node to the same path on all other Elasticsearch nodes.
+</li>
+<li class="listitem">
+Copy the <code class="literal">elastic-stack-ca.p12</code> file from <code class="literal">/etc/elasticsearch/certs/</code> to the <code class="literal">/etc/elasticsearch/certs/</code> directory on all other Elasticsearch nodes.
+</li>
+<li class="listitem">
+Copy the <code class="literal">http.p12</code> file from each node directory in <code class="literal">/usr/share/elasticsearch/elasticsearch</code> (that is, <code class="literal">elasticsearch/mynode-es1</code>, <code class="literal">elasticsearch/mynode-es2</code> and <code class="literal">elasticsearch/mynode-es3</code>) to the <code class="literal">/etc/elasticsearch/certs/</code> directory on each corresponding cluster node.
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>On each Elasticsearch node, repeat the steps to generate a new certificate for the transport layer:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>Stop the Elasticsearch service:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo systemctl stop elasticsearch.service</pre>
+</div>
+</li>
+<li class="listitem">
+<p>From the <code class="literal">/etc/elasticsearch/certs</code> directory, create a new certificate for the Elasticsearch node:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-certutil cert --ca-cert /etc/elasticsearch/certs/ca/ca.crt --ca-key /etc/elasticsearch/certs/ca/ca.key</pre>
+</div>
+<p>When prompted, choose an output file name and specify a password for the certificate. For this example, we&#8217;ll use <code class="literal">/etc/elasticsearch/certs/elastic-certificates.p12</code>.</p>
+</li>
+<li class="listitem">
+<p>Update the <code class="literal">/etc/elasticsearch/elasticsearch.yml</code> settings file with the new truststore and keystore filename and path:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">xpack.security.transport.ssl:
+   ...
+   keystore.path: /etc/elasticsearch/certs/elastic-certificates.p12
+   truststore.path: /etc/elasticsearch/certs/elastic-stack-ca.p12</pre>
+</div>
+</li>
+<li class="listitem">
+<p>List the content of the Elasticsearch keystore:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">/usr/share/elasticsearch/bin/elasticsearch-keystore list</pre>
+</div>
+<p>The results should be like the following:</p>
+<div class="pre_wrapper lang-yaml">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-yaml">keystore.seed
+xpack.security.http.ssl.keystore.secure_password
+xpack.security.transport.ssl.keystore.secure_password
+xpack.security.transport.ssl.truststore.secure_password</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Remove the existing keystore values for the default transport keystore and truststore:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-keystore remove xpack.security.transport.ssl.keystore.secure_password
+
+sudo /usr/share/elasticsearch/bin/elasticsearch-keystore remove xpack.security.transport.ssl.truststore.secure_password</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Update the <code class="literal">elasticsearch-keystore</code> with the passwords for the new keystore and truststore:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-keystore add xpack.security.transport.ssl.keystore.secure_password
+
+sudo /usr/share/elasticsearch/bin/elasticsearch-keystore add xpack.security.transport.ssl.truststore.secure_password</pre>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li class="listitem">
+<p>For the HTTP layer, the certificates have been generated already on the first Elasticsearch node. Each additional Elasticsearch node just needs to be configured to use the new certificates.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>Update the <code class="literal">/etc/elasticsearch/elasticsearch.yml</code> settings file with the new truststore and keystore filenames:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">xpack.security.http.ssl:
+  enabled: true
+  #keystore.path: certs/http.p12
+  keystore.path: /etc/elasticsearch/certs/http.p12</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Remove the existing HTTP keystore entry:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-keystore remove xpack.security.http.ssl.keystore.secure_password</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Add the updated HTTP keystore password:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-keystore add xpack.security.http.ssl.keystore.secure_password</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Change the certificate files to be owned by the <code class="literal">root:elasticsearch</code> group:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo chown -R root:elasticsearch /etc/elasticsearch/certs/</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Set the files in <code class="literal">/etc/elasticsearch/certs</code> to have read and write permissions by the owner (<code class="literal">root</code>) and read permission by the <code class="literal">elastic</code> user:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">chmod 640 *</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Change the <code class="literal">/etc/elasticsearch/certs</code> and <code class="literal">/etc/elasticsearch/certs/ca</code> directories to be executable by the owner:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">chmod 750 /etc/elasticsearch/certs
+chmod 750 /etc/elasticsearch/certs/ca</pre>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li class="listitem">
+<p>Restart the Elasticsearch service.</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo systemctl start elasticsearch.service</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Run the status command to confirm that Elasticsearch is running.</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo systemctl status elasticsearch.service</pre>
+</div>
+</li>
+</ol>
+</div>
+<div class="position-relative"><h2><a id="install-stack-demo-secure-kib-es"></a>Step 5: Generate server-side and client-side certificates for Kibana</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-secure.asciidoc">edit</a></div>
+<p>Now that the transport and HTTP layers are configured with encryption using the new certificates, there are two more tasks that must be accomplished for end-to-end connectivity to Elasticsearch: Set up certificates for encryption between Kibana and Elasticsearch, and between the client browser and Kibana. For additional details about any of these steps, refer to <a href="https://www.elastic.co/guide/en/kibana/master/elasticsearch-mutual-tls.html" class="ulink" target="_top">Mutual TLS authentication between Kibana and Elasticsearch</a> and <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/security-basic-setup-https.html#encrypt-kibana-browser" class="ulink" target="_top">Encrypt traffic between your browser and Kibana</a>.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>In Step 3, when you generated a new certificate for the HTTP layer, the process created an archive <code class="literal">elasticsearch-ssl-http.zip</code>.</p>
+<p>From the <code class="literal">kibana</code> directory in the expanded archive, copy the <code class="literal">elasticsearch-ca.pem</code> private key file to the Kibana host machine.</p>
+</li>
+<li class="listitem">
+<p>On the Kibana host machine, copy <code class="literal">elasticsearch-ca.pem</code> to the Kibana configuration directory (depending on the installation method that you used, the location of the configuration directory may be different from what&#8217;s shown):</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">mv elasticsearch-ca.pem /etc/kibana</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Stop the Kibana service:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo systemctl stop kibana.service</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Update the <code class="literal">/etc/kibana/kibana.yml</code> settings file to reflect the location of the <code class="literal">elasticsearch-ca.pem</code>:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">elasticsearch.ssl.certificateAuthorities: [/etc/kibana/elasticsearch-ca.pem]</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Log in to the first Elasticsearch node and use the certificate utility to generate a certificate bundle for the Kibana server. This certificate will be used to encrypt the traffic between Kibana and the client&#8217;s browser. In the command, replace &lt;DNS name&gt; and &lt;IP address&gt; with the name and IP address of your Kibana server host:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-certutil cert --name kibana-server --ca-cert /etc/elasticsearch/certs/ca/ca.crt --ca-key /etc/elasticsearch/certs/ca/ca.key  --dns &lt;DNS name&gt; --ip &lt;IP address&gt; --pem</pre>
+</div>
+<p>When prompted, specify a unique name for the output file, such as <code class="literal">kibana-cert-bundle.zip</code>.</p>
+</li>
+<li class="listitem">
+<p>Copy the generated archive over to your Kibana host and unpack it:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo unzip kibana-cert-bundle.zip</pre>
+</div>
+<p>The unpacked archive will create a directory, <code class="literal">kibana-server</code>,  containing the new Kibana key and certificate:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">ls -l kibana-server/
+total 8
+-rw-r--r--. 1 root root 1208 May  3 16:08 kibana-server.crt
+-rw-r--r--. 1 root root 1675 May  3 16:08 kibana-server.key</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Copy the certificate and key into <code class="literal">/etc/kibana</code>:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo cp kibana-server.crt /etc/kibana/
+sudo cp kibana-server.key /etc/kibana/</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Update the permissions on the certificate files to ensure that they’re readable. From inside the <code class="literal">/etc/kibana</code> directory, run:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo chmod 640 *.crt
+sudo chmod 640 *.key</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Open <code class="literal">/etc/kibana/kibana.yml</code> and make the following changes:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">server.ssl.certificate: /etc/kibana/kibana-server.crt
+server.ssl.key: /etc/kibana/kibana-server.key
+server.ssl.enabled: true</pre>
+</div>
+<p>Keep the file open for the next step.</p>
+</li>
+<li class="listitem">
+<p>To ensure that Kibana sessions are not invalidated, set up an encryption key by assigning any string of 32 characters or longer to the <code class="literal">xpack.security.encryptionKey</code> setting (this string will be configured in <code class="literal">kibana.yml</code> and does not need to be remembered). To generate a random string, you can use the following bash commands:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">cat /dev/urandom | tr -dc 'a-z0-9' | fold -w 32 | head -n 1</pre>
+</div>
+<p>Using your own string or the output of the above command sequence, add the encryption key setting to <code class="literal">/etc/kibana/kibana.yml</code>:</p>
+<div class="pre_wrapper lang-sh">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-sh">xpack.security.encryptionKey: previously_create_string</pre>
+</div>
+<p>Save and close the file.</p>
+</li>
+<li class="listitem">
+<p>Restart the Kibana service:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo systemctl start kibana.service</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Confirm that Kibana is running:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo systemctl status kibana.service</pre>
+</div>
+<p>If everything is configured correctly, connection to Elasticsearch will be established and Kibana will start normally.</p>
+</li>
+<li class="listitem">
+<p>You can also view the Kibana log file to gather more detail:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">tail -f /var/log/kibana/kibana.log</pre>
+</div>
+<p>In the log file you should find a <code class="literal">Kibana is now available</code> message.</p>
+</li>
+<li class="listitem">
+<p>You should now have an end-to-end ecnrypted deployment with Elasticsearch and Kibana that provides encryption between both the cluster nodes and Kibana, and HTTPS access to Kibana.</p>
+<p>Open a web browser to the external IP address of the Kibana host machine: <code class="literal">https://&lt;kibana-host-address&gt;:5601</code>. Note that the URL should use the <code class="literal">https</code> and not the <code class="literal">http</code> protocol.</p>
+</li>
+<li class="listitem">
+Log in using the <code class="literal">elastic</code> user and password that you configured in Step 1 of <a class="xref" href="installing-elastic-stack.html#installing-stack-demo-self" title="Tutorial 1: Installing a self-managed Elastic Stack">Tutorial 1: Installing a self-managed Elastic Stack</a>.
+</li>
+</ol>
+</div>
+<p>Congratulations! You&#8217;ve successfully updated the SSL certificates between Elasticsearch and Kibana.</p>
+<div class="position-relative"><h2><a id="install-stack-demo-secure-fleet"></a>Step 6: Install Fleet with SSL certificates configured</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-secure.asciidoc">edit</a></div>
+<p>Now that Kibana is up and running, you can proceed to install Fleet Server, which will manage the Elastic Agent that we&#8217;ll set up in a later step.</p>
+<p>If you&#8217;d like to learn more about these steps, refer to <a href="https://www.elastic.co/guide/en/fleet/master/add-fleet-server-on-prem.html" class="ulink" target="_top">Deploy on-premises and self-managed</a> in the Fleet and Elastic Agent Guide. You can find detailed steps to generate and configure certificates in <a href="https://www.elastic.co/guide/en/fleet/master/secure-connections.html" class="ulink" target="_top">Configure SSL/TLS for self-managed Fleet Servers</a>.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>Log in to the first Elasticsearch node and use the certificate utility to generate a certificate bundle for Fleet Server. In the command, replace <code class="literal">&lt;DNS name&gt;</code> and <code class="literal">IP address</code> with the name and IP address of your Fleet Server host:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo /usr/share/elasticsearch/bin/elasticsearch-certutil cert --name fleet-server --ca-cert /etc/elasticsearch/certs/ca/ca.crt --ca-key /etc/elasticsearch/certs/ca/ca.key  --dns &lt;DNS name&gt; --ip &lt;IP address&gt; --pem</pre>
+</div>
+<p>When prompted, specify a unique name for the output file, such as <code class="literal">fleet-cert-bundle.zip</code>.</p>
+</li>
+<li class="listitem">
+<p>On your Fleet Server host, create a directory for the certificate files:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo mkdir /etc/fleet</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Copy the generated archive over to your Fleet Server host and unpack it into <code class="literal">/etc/fleet/</code>:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<code class="literal">/etc/fleet/fleet-server.crt</code>
+</li>
+<li class="listitem">
+<code class="literal">/etc/fleet/fleet-server.key`</code>
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>From the first Elasticsearch node, copy the <code class="literal">ca.crt</code> file, and paste it into the <code class="literal">/etc/fleet/</code> directory on the Fleet Server host. Just to help identify the file we&#8217;ll also rename it to <code class="literal">es-ca.crt</code>:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<code class="literal">/etc/fleet/es-ca.crt</code>
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>Update the permissions on the certificate files to ensure that they&#8217;re readable. From inside the <code class="literal">/etc/fleet</code> directory, run:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo chmod 640 *.crt
+sudo chmod 640 *.key</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Now that the certificate files are in place, on the Fleet Server host create a working directory for the installation package:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">mkdir fleet-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Change into the new directory:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">cd fleet-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+In the terminal, run the <code class="literal">ifconfig</code> command and copy the value for the host inet IP address (for example, <code class="literal">10.128.0.84</code>). You&#8217;ll need this value later.
+</li>
+<li class="listitem">
+Back in your web browser, open the Kibana menu and go to <span class="strong strong"><strong>Management &#8594; Fleet</strong></span>. Fleet opens with a message that you need to add a Fleet Server.
+</li>
+<li class="listitem">
+Click <span class="strong strong"><strong>Add Fleet Server</strong></span>. The <span class="strong strong"><strong>Add a Fleet Server</strong></span> flyout opens.
+</li>
+<li class="listitem">
+In the flyout, select the <span class="strong strong"><strong>Advanced</strong></span> tab.
+</li>
+<li class="listitem">
+<p>On the <span class="strong strong"><strong>Create a policy for Fleet Server</strong></span> step, keep the default Fleet Server policy name and all advanced options at their defaults.</p>
+<p>Leave the option to collect system logs and metrics selected. Click <span class="strong strong"><strong>Create policy</strong></span>. The policy takes a minute or so to create.</p>
+</li>
+<li class="listitem">
+On the <span class="strong strong"><strong>Choose a deployment mode for security</strong></span> step, select the <span class="strong strong"><strong>Production</strong></span> option. This enables you to provide your own certificates.
+</li>
+<li class="listitem">
+<p>On the <span class="strong strong"><strong>Add your Fleet Server host</strong></span> step:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Specify a name for your Fleet Server host, for example <code class="literal">Fleet Server</code>.
+</li>
+<li class="listitem">
+<p>Specify the host URL and where Elastic Agents will reach Fleet Server, including the default port <code class="literal">8220</code>. For example, <code class="literal">https://10.128.0.203:8220</code>.</p>
+<p>The URL is the inet value that you copied from the <code class="literal">ifconfig</code> output.</p>
+<p>For details about default port assignments, refer to <a href="https://www.elastic.co/guide/en/fleet/master/add-fleet-server-on-prem.html#default-port-assignments-on-prem" class="ulink" target="_top">Default port assignments</a> in the on-premises Fleet Server install documentation.</p>
+</li>
+<li class="listitem">
+Click <span class="strong strong"><strong>Add host</strong></span>.
+</li>
+</ol>
+</div>
+</li>
+<li class="listitem">
+On the <span class="strong strong"><strong>Generate a service token</strong></span> step, generate the token and save the output. The token will also be propagated automatically to the command to install Fleet Server.
+</li>
+<li class="listitem">
+<p>On the <span class="strong strong"><strong>Install Fleet Server to a centralized host</strong></span> step, for this example we select the <span class="strong strong"><strong>Linux Tar</strong></span> tab, but you can instead select the tab appropriate to the host operating system where you&#8217;re setting up Fleet Server.</p>
+<p>Note that TAR/ZIP packages are recommended over RPM/DEB system packages, since only the former support upgrading Fleet Server using Fleet.</p>
+</li>
+<li class="listitem">
+<p>Run the first three commands one-by-one in the terminal on your Fleet Server host.</p>
+<p>These commands will, respectively:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Download the Fleet Server package from the Elastic Artifact Registry.
+</li>
+<li class="listitem">
+Unpack the package archive.
+</li>
+<li class="listitem">
+Change into the directory containing the install binaries.
+</li>
+</ol>
+</div>
+</li>
+<li class="listitem">
+<p>Before running the provided <code class="literal">elastic-agent install</code> command, you&#8217;ll need to make a few changes:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>Update the paths to the correct file locations:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+The Elasticsearch CA file (<code class="literal">es-ca.crt</code>)
+</li>
+<li class="listitem">
+The Fleet Server certificate (<code class="literal">fleet-server.crt</code>)
+</li>
+<li class="listitem">
+The Fleet Server key (<code class="literal">fleet-server.key</code>)
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>The <code class="literal">fleet-server-es-ca-trusted-fingerprint</code> also needs to be updated. On any of your Elasticsearch hosts, run the following command to get the correct fingerprint to use:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">grep -v ^- /etc/elasticsearch/certs/ca/ca.crt | base64 -d | sha256sum</pre>
+</div>
+<p>Save the fingerprint value. You&#8217;ll need it in a later step.</p>
+<p>Replace the <code class="literal">fleet-server-es-ca-trusted-fingerprint</code> setting with the returned value. Your updated command should be similar to the following:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo ./elastic-agent install -url=https://10.128.0.208:8220 \
+  --fleet-server-es=https://10.128.0.84:9200 \
+  --fleet-server-service-token=AAEAAWVsYXN0aWMvZmxlZXQtc2VydmPyL6Rva2VuLTE5OTg4NzAxOTM4NDU6X1I0Q1RrRHZTSWlyNHhkSXQwNEJoQQ \
+  --fleet-server-policy=fleet-server-policy \
+  --fleet-server-es-ca-trusted-fingerprint=92b51cf91e7fa311f8c84849224d448ca44824eb \
+  --certificate-authorities=/etc/fleet/es-ca.crt \
+  --fleet-server-cert=/etc/fleet/fleet-server.crt \
+  --fleet-server-cert-key=/etc/fleet/fleet-server.key \
+  --fleet-server-port=8220</pre>
+</div>
+<p>For details about all of the install command options, refer to <a href="https://www.elastic.co/guide/en/fleet/master/elastic-agent-cmd-options.html#elastic-agent-install-command" class="ulink" target="_top"><code class="literal">elastic-agent install</code></a> in the Elastic Agent command reference.</p>
+</li>
+</ol>
+</div>
+</li>
+<li class="listitem">
+<p>After you&#8217;ve made the required updates, run the <code class="literal">elastic-agent install</code> command to install Fleet Server.</p>
+<p>When prompted, confirm that Elastic Agent should run as a service. If everything goes well, the install will complete successfully:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">Elastic Agent has been successfully installed.</pre>
+</div>
+<div class="tip admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>Wondering why the command refers to Elastic Agent rather than Fleet Server? Fleet Server is actually a subprocess that runs inside Elastic Agent with a special Fleet Server policy. Refer to <a href="https://www.elastic.co/guide/en/fleet/master/fleet-server.html" class="ulink" target="_top">What is Fleet Server</a> to learn more.</p>
+</div>
+</div>
+</li>
+<li class="listitem">
+Return to the Kibana <span class="strong strong"><strong>Add a Fleet Server</strong></span> flyout and wait for confirmation that Fleet Server has connected.
+</li>
+<li class="listitem">
+Once the connection is confirmed, ignore the <span class="strong strong"><strong>Continue enrolling Elastic Agent</strong></span> option and close the flyout.
+</li>
+</ol>
+</div>
+<p>Fleet Server is now fully set up!</p>
+<p>Before proceeding to install Elastic Agent, there are a few steps needed to update the <code class="literal">kibana.yml</code> settings file with the Elasticsearch CA fingerprint:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>On your Kibana host, stop the Kibana service:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo systemctl stop kibana.service</pre>
+</div>
+</li>
+<li class="listitem">
+Open <code class="literal">/etc/kibana/kibana.yml</code> for editing.
+</li>
+<li class="listitem">
+Find the <code class="literal">xpack.fleet.outputs</code> setting.
+</li>
+<li class="listitem">
+<p>Update <code class="literal">ca_trusted_fingerprint</code> to the value you captured earlier, when you ran the <code class="literal">grep</code> command on the Elasticsearch <code class="literal">ca.crt</code> file.</p>
+<p>The updated entry in <code class="literal">kibana.yml</code> should be like the following:</p>
+<div class="pre_wrapper lang-yaml">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-yaml">xpack.fleet.outputs: [{id: fleet-default-output, name: default, is_default: true, is_default_monitoring: true, type: elasticsearch, hosts: [`https://10.128.0.84:9200`], ca_trusted_fingerprint: 92b51cf91e7fa311f8c84849224d448ca44824eb}]</pre>
+</div>
+</li>
+<li class="listitem">
+Save your changes.
+</li>
+<li class="listitem">
+<p>Restart Kibana:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo systemctl start kibana.service</pre>
+</div>
+<p>Kibana is now configured with the correct fingerprint for Elastic Agent to access Elasticsearch. You&#8217;re now ready to set up Elastic Agent!</p>
+</li>
+</ol>
+</div>
+<div class="position-relative"><h2><a id="install-stack-demo-secure-agent"></a>Step 7: Install Elastic Agent</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-secure.asciidoc">edit</a></div>
+<p>Next, we&#8217;ll install Elastic Agent on another host and use the System integration to monitor system logs and metrics. You can find additional details about these steps in <a href="https://www.elastic.co/guide/en/fleet/master/secure-connections.html" class="ulink" target="_top">Configure SSL/TLS for self-managed Fleet Servers</a>.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Log in to the host where you&#8217;d like to set up Elastic Agent.
+</li>
+<li class="listitem">
+<p>Create a directory for the Elasticsearch certificate file:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo mkdir /etc/agent</pre>
+</div>
+</li>
+<li class="listitem">
+<p>From the first Elasticsearch node, copy the <code class="literal">ca.crt</code> file, and paste it into the <code class="literal">/etc/agent/</code> directory on the Fleet Server host. Just to help identify the file we&#8217;ll also rename it to <code class="literal">es-ca.crt</code>:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<code class="literal">/etc/fleet/es-ca.crt</code>
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>Create a working directory for the installation package:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">mkdir agent-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Change into the new directory:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">cd agent-install-files</pre>
+</div>
+</li>
+<li class="listitem">
+Open Kibana and go to <span class="strong strong"><strong>Management &#8594; Fleet</strong></span>.
+</li>
+<li class="listitem">
+On the <span class="strong strong"><strong>Agents</strong></span> tab, you should see your new Fleet Server policy running with a healthy status.
+</li>
+<li class="listitem">
+Click <span class="strong strong"><strong>Add agent</strong></span>. The <span class="strong strong"><strong>Add agent</strong></span> flyout opens.
+</li>
+<li class="listitem">
+In the flyout, choose an agent policy name, for example <code class="literal">Demo Agent Policy</code>.
+</li>
+<li class="listitem">
+Leave <span class="strong strong"><strong>Collect system logs and metrics</strong></span> enabled. This will add the <a href="https://docs.elastic.co/integrations/system" class="ulink" target="_top">System integration</a> to the Elastic Agent policy.
+</li>
+<li class="listitem">
+Click <span class="strong strong"><strong>Create policy</strong></span>.
+</li>
+<li class="listitem">
+For the <span class="strong strong"><strong>Enroll in Fleet?</strong></span> step, leave <span class="strong strong"><strong>Enroll in Fleet</strong></span> selected.
+</li>
+<li class="listitem">
+<p>On the <span class="strong strong"><strong>Install Elastic Agent on your host</strong></span> step, for this example we select the <span class="strong strong"><strong>Linux Tar</strong></span> tab, but you can instead select the tab appropriate to the host operating system where you&#8217;re setting up Fleet Server.</p>
+<p>As with Fleet Server, note that TAR/ZIP packages are recommended over RPM/DEB system packages, since only the former support upgrading Elastic Agent using Fleet.</p>
+</li>
+<li class="listitem">
+<p>Run the first three commands one-by-one in the terminal on your Elastic Agent host.</p>
+<p>These commands will, respectively:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Download the Elastic Agent package from the Elastic Artifact Registry.
+</li>
+<li class="listitem">
+Unpack the package archive.
+</li>
+<li class="listitem">
+Change into the directory containing the install binaries.
+</li>
+</ol>
+</div>
+</li>
+<li class="listitem">
+<p>Before running the provided <code class="literal">elastic-agent install</code> command, you&#8217;ll need to make a few changes:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+For the <code class="literal">--url</code> parameter, confirm that the port number is <code class="literal">8220</code> (this is the default port for on-premises Fleet Server).
+</li>
+<li class="listitem">
+<p>Add a <code class="literal">--certificate-authorities</code> parameter with the full path of your CA certificate file. For example, <code class="literal">--certificate-authorities=/etc/agent/es-ca.crt</code>.</p>
+<p>The result should be like the following:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">sudo ./elastic-agent install \
+--url=https://10.128.0.203:8220 \
+--enrollment-token=VWCobFhKd0JuUnppVYQxX0VKV5E6UmU3BGk0ck9RM2HzbWEmcS4Bc1YUUM== \
+--certificate-authorities=/etc/agent/es-ca.crt</pre>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li class="listitem">
+<p>Run the <code class="literal">elastic-agent install</code> command.</p>
+<p>At the prompt, enter <code class="literal">Y</code> to install Elastic Agent and run it as a service. wait for the installation to complete.</p>
+<p>If everything goes well, the install will complete successfully:</p>
+<div class="pre_wrapper lang-shell">
+<div class="console_code_copy" title="Copy to clipboard"></div>
+<pre class="programlisting prettyprint lang-shell">Elastic Agent has been successfully installed.</pre>
+</div>
+</li>
+<li class="listitem">
+In the Kibana <span class="strong strong"><strong>Add agent</strong></span> flyout, wait for confirmation that Elastic Agent has connected.
+</li>
+<li class="listitem">
+Wait for the <span class="strong strong"><strong>Confirm incoming data</strong></span> step to complete. This may take a couple of minutes.
+</li>
+<li class="listitem">
+Once data is confirmed to be flowing, close the flyout.
+</li>
+</ol>
+</div>
+<p>Your new Elastic Agent is now installed an enrolled with Fleet Server.</p>
+<div class="position-relative"><h2><a id="install-stack-demo-secure-view-data"></a>Step 8: View your system data</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-secure.asciidoc">edit</a></div>
+<p>Now that all of the components have been installed, it&#8217;s time to view your system data.</p>
+<p>View your system log data:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Open the Kibana menu and go to <span class="strong strong"><strong>Analytics &#8594; Dashboard</strong></span>.
+</li>
+<li class="listitem">
+In the query field, search for <code class="literal">Logs System</code>.
+</li>
+<li class="listitem">
+Select the <code class="literal">[Logs System] Syslog dashboard</code> link. The Kibana Dashboard opens with visualizations of Syslog events, hostnames and processes, and more.
+</li>
+</ol>
+</div>
+<p>View your system metrics data:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Open the Kibana menu and return to <span class="strong strong"><strong>Analytics &#8594; Dashboard</strong></span>.
+</li>
+<li class="listitem">
+In the query field, search for <code class="literal">Metrics System</code>.
+</li>
+<li class="listitem">
+<p>Select the <code class="literal">[Metrics System] Host overview</code> link. The Kibana Dashboard opens with visualizations of host metrics including CPU usage, memory usage, running processes, and more.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/install-stack-metrics-dashboard.png" alt="The System metrics host overview showing CPU usage, memory usage, and other visualizations">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<p>Congratulations! You&#8217;ve successfully configured security for Elasticsearch, Kibana, Fleet, and Elastic Agent using your own trusted CA-signed certificates.</p>
+<div class="position-relative"><h2><a id="_whats_next"></a>What&#8217;s next?</h2><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/QubitPi/elastic-stack-docs/edit/master/docs/en/install-upgrade/installing-stack-demo-secure.asciidoc">edit</a></div>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Do you have data ready to ingest into your newly set up Elastic Stack? Learn how to <a href="https://www.elastic.co/guide/en/cloud/current/ec-cloud-ingest-data.html" class="ulink" target="_top">add data to Elasticsearch</a>.
+</li>
+<li class="listitem">
+Use <a href="https://www.elastic.co/observability" class="ulink" target="_top">Elastic Observability</a>
+to unify your logs, infrastructure metrics, uptime, and application performance data.
+</li>
+<li class="listitem">
+Want to protect your endpoints from security threats? Try
+<a href="https://www.elastic.co/security" class="ulink" target="_top">Elastic Security</a>. Adding endpoint protection is
+just another integration that you add to the agent policy!
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</div><div class="navfooter">
 <span class="prev">
 <a href="overview.html">« Overview</a>
 </span>
 <span class="next">
 <a href="air-gapped-install.html">Installing in an air-gapped environment »</a>
 </span>
-</div>
 </div>
 
                   <!-- end body -->
@@ -256,6 +2301,9 @@ information, see <a href="https://www.elastic.co/pricing/" class="ulink" target=
                             </div>
                           </div>
                         </div>
+
+                        <!-- Feedback widget -->
+                        <div id="feedbackWidgetContainer"></div>
                       </div>
                     </div>
                   </div>
@@ -267,16 +2315,19 @@ information, see <a href="https://www.elastic.co/pricing/" class="ulink" target=
         </div>
 
 
-<div id='elastic-footer'></div>
-<script src='https://www.elastic.co/elastic-footer.js'></script>
-<!-- Footer Section end-->
+        <div id='elastic-footer'></div>
+        <script src='https://www.elastic.co/elastic-footer.js'></script>
+        <!-- Footer Section end-->
 
       </section>
     </div>
 
-<script src="/QubitPi/elastic-docs/guide/static/jquery.js"></script>
-<script type="text/javascript" src="/QubitPi/elastic-docs/guide/static/docs.js"></script>
-<script type="text/javascript">
+    <!-- Feedback modal -->
+    <div id="feedbackModalContainer"></div>
+
+    <script src="https://qubitpi.github.io/QubitPi/elastic-docs/guide/static/jquery.js"></script>
+    <script type="text/javascript" src="https://qubitpi.github.io/QubitPi/elastic-docs/guide/static/docs-v1.js"></script>
+    <script type="text/javascript">
   window.initial_state = {}</script>
   </body>
 </html>
